@@ -43,6 +43,8 @@ This is the html code that makes the webapp for visualizing and controlling the 
 to fetch and send values to the firebase database and the app, which then communicate with the arduino board that controls the actual components on the 
 feild.
 
+[Find the vscode codes](https://github.com/minenhledlamini12/Rural-smart-water/tree/main/firebase-rural-smart-water) 
+
 <!DOCTYPE html>
 <!-- Complete Project Details at: https://RandomNerdTutorials.com/ -->
 <html>
