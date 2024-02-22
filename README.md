@@ -28,6 +28,8 @@ through sensor. The connected sensors are:
 2. pH sensor that tests the pH of water
 3. TSD  that test for dissolved chemicals in the water
 
+[Find the arduino.ion code]()
+
 This sensors upload the readings to the arduino board which then sends the data to the google firebase databese which will display on the webapp.
 the board also controls the the pump, the valves that are in the water supply system.
 
