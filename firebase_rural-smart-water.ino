@@ -1,5 +1,4 @@
 /*
-  Rui Santos
   Complete project details at our blog.
     - ESP32: https://RandomNerdTutorials.com/firebase-control-esp32-gpios/
     - ESP8266: https://RandomNerdTutorials.com/firebase-control-esp8266-nodemcu-gpios/
