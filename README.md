@@ -1,6 +1,6 @@
 # Rural-smart-water
 
-## Problem Descreption
+## Problem Description
 Water is an essential component for maintaining good health and well-being.
 However, one main challenge for sustainable development in Eswatini is bridging the
 gap in water supply between rural and urban areas, ensuring reliable access to clean
@@ -21,17 +21,19 @@ maintenance ensuring a constant supply of clean water through:
 ● Remote monitoring
 ● Remote control
 
-### The Esp32 code
-This is the code that runs on the arduino esp32 board that harvest the data for the stream 
-through sensor. The connected sensors are:
-1. Turbidity sensor which detect the amoount of suspended particles in water.test for dissolved chemicals in the water
-2. pH sensor that tests the pH of water
-3. TSD  that test for dissolved chemicals in the water
+### The LoRa32 sender code:
+This is the code that runs on the arduino LoRa32 board that sends data from the instrumentation room to the control room where it is uploaded
+to the realtime database harvest the data for the stream through sensor. The connected sensors are:
+
+1. Turbidity sensor which detect the amoount of suspended particles in water.test for dissolved chemicals in the water.
+2. pH sensor that tests the pH of water.
+3. TSD  that test for dissolved chemicals in the water.
+4. Ultrasonic sensor.
 
 [Find the arduino.ion code](https://github.com/minenhledlamini12/Rural-smart-water/blob/main/firebase_rural-smart-water.ino)
 
-This sensors upload the readings to the arduino board which then sends the data to the google firebase databese which will display on the webapp.
-the board also controls the the pump, the valves that are in the water supply system.
+This sensors upload the readings to the arduino board which then sends the data to the other board to be transmitted to
+google firebase databese which will display on the webapp.The board also controls the the pump, the valves that are in the water supply system.
 
 
 
