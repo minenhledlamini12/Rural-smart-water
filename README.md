@@ -30,7 +30,7 @@ to the realtime database harvest the data for the stream through sensor. The con
 3. TSD  that test for dissolved chemicals in the water.
 4. Ultrasonic sensor.
 
-[Find the arduino.ion code](https://github.com/minenhledlamini12/Rural-smart-water/blob/main/firebase_rural-smart-water.ino)
+[Find the arduino.ion code](https://github.com/minenhledlamini12/Rural-smart-water/tree/main/firebase-rural-smart-water)
 
 This sensors upload the readings to the arduino board which then sends the data to the other board to be transmitted to
 google firebase databese which will display on the webapp.The board also controls the the pump, the valves that are in the water supply system.
