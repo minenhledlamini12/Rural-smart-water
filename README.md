@@ -50,7 +50,7 @@ The folder shows all the files running on vscode to make the webapp.
 [Find the vscode codes](https://github.com/minenhledlamini12/Rural-smart-water/tree/main/firebase-rural-smart-water) 
 
 ### Google Earth Engine code
-This is the google erath code that locate the exact location
+This is the google erath code that locate the exact location of a resevoir to see the real set up of the source.  
 [Find the code](https://github.com/minenhledlamini12/Rural-smart-water/blob/main/rural_smart_water_googleearth.py)
 
 
