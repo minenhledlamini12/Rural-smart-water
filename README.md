@@ -25,10 +25,10 @@ maintenance ensuring a constant supply of clean water through:
 ## The LoRa32 sender code:
 This is the code that runs on the arduino LoRa32 board that sends data from the instrumentation room (at the water source eg: stream) to the control room where it is uploaded to the realtime database, which harvests the data for the stream through sensors intrefaced to the board. This board has no internet connection only radio communicate with the other board at the control room. The connected sensors are:
 
-1. Turbidity sensor which detect the amoount of suspended particles in water.test for dissolved chemicals in the water.
+1. Turbidity sensor which detect the amount of suspended particles in water.
 2. pH sensor that tests the pH of water.
-3. TSD  that test for dissolved chemicals in the water.
-4. Ultrasonic sensor.
+3. TSD sensor that test for dissolved chemicals in the water.
+4. Ultrasonic sensor that get the water level to automatically turn on and off pump.
 
 [Find the arduino.ion code](https://github.com/minenhledlamini12/Rural-smart-water/tree/main/firebase-rural-smart-water) That collects and send the water parameters and valve control states to the other board at the control room.
 
