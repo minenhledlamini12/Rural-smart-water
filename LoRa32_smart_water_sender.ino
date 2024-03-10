@@ -195,35 +195,6 @@ void sendReadings() {
   readingID++;
 }
 
-// Initialize WiFi
-void initWiFi() {
-  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
-  Serial.print("Connecting to WiFi ..");
-  while (WiFi.status() != WL_CONNECTED) {
-    Serial.print('.');
-    delay(1000);
-  }
-  Serial.println(WiFi.localIP());
-  Serial.println();
-}
-
-// Write float values to the database
-void sendFloat(String path, float value){
-  if (Firebase.RTDB.setFloat(&fbdo, path.c_str(), value)){
-    Serial.print("Writing value: ");
-    Serial.print (value);
-    Serial.print(" on the following path: ");
-    Serial.println(path);
-    Serial.println("PASSED");
-    Serial.println("PATH: " + fbdo.dataPath());
-    Serial.println("TYPE: " + fbdo.dataType());
-  }
-  else {
-    Serial.println("FAILED");
-    Serial.println("REASON: " + fbdo.errorReason());
-  }
-}
-
 void setup(){
   Serial.begin(115200);
   startOLED();
