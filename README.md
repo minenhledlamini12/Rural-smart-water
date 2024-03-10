@@ -18,8 +18,9 @@ supply schemes. However, the problem lies in accurately capturing information
 about the water supply system and making informed decisions in real-time. This
 could lead to quick responses in the case the system fails, planned and timely
 maintenance ensuring a constant supply of clean water through:
-● Remote monitoring
-● Remote control
+1. Remote monitoring
+2. Remote control
+
 
 ## The LoRa32 sender code:
 This is the code that runs on the arduino LoRa32 board that sends data from the instrumentation room (at the water source eg: stream) to the control room where it is uploaded to the realtime database, which harvests the data for the stream through sensors intrefaced to the board. This board has no internet connection only radio communicate with the other board at the control room. The connected sensors are:
@@ -29,7 +30,7 @@ This is the code that runs on the arduino LoRa32 board that sends data from the 
 3. TSD  that test for dissolved chemicals in the water.
 4. Ultrasonic sensor.
 
-[Find the arduino.ion code](https://github.com/minenhledlamini12/Rural-smart-water/tree/main/firebase-rural-smart-water) That collects and send the water parameters to the other board at the control room.
+[Find the arduino.ion code](https://github.com/minenhledlamini12/Rural-smart-water/tree/main/firebase-rural-smart-water) That collects and send the water parameters and valve control states to the other board at the control room.
 
 This sensors inputs the readings to the arduino board which then sends the data to the other board to be transmitted to
 google firebase databese which will display on the webapp. The board also controls the the pump, the valves that are in the water supply system.
@@ -37,7 +38,7 @@ google firebase databese which will display on the webapp. The board also contro
 ## The LoRa32 receiver code:
 This is the code that runs on the arduino LoRa32 board at the control room that receives data from the instrumentation room (at the water source eg: river). The recieved data is uploaded to firebase by this board which has wifi connection to upload the data received from the other board to the realtime database (on firebase). 
 
-[Find the arduino.ion code](https://github.com/minenhledlamini12/Rural-smart-water/tree/main/firebase-rural-smart-water) That recieves and upload the data to firebase.
+[Find the arduino.ion code](https://github.com/minenhledlamini12/Rural-smart-water/tree/main/firebase-rural-smart-water) That recieves and upload the data and valve control states to firebase.
 
 ## The webapp 
 The webapp is the dashboard for monitoring and controlling the clean water supply system.
