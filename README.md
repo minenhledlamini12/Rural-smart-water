@@ -43,6 +43,8 @@ This is the code that runs on the arduino LoRa32 board at the control room that 
 ## The Home page
 This is the home page of the smart water system where each reservoir's infomation is stored in a correspondig tab. Clicking a tab leads to the webapp wher authentification is requered for to access the app's dashboard.
 
+[Find the vscode codes](https://github.com/minenhledlamini12/Rural-smart-water/tree/main/public) The folder shows all the files running on vscode to make the home page.
+
 ## The webapp 
 The webapp is the dashboard for monitoring and controlling the clean water supply system.
 
