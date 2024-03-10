@@ -14,7 +14,7 @@ schemes. RWSB does provide technical support to communities in the form of
 maintenance technicians to assist communities in repairing broken down
 components of the water supply schemes. The section also provides training for
 community members to carry out minor maintenance of their respective water
-supply schemes[1]. However, the problem lies in accurately capturing information
+supply schemes. However, the problem lies in accurately capturing information
 about the water supply system and making informed decisions in real-time. This
 could lead to quick responses in the case the system fails, planned and timely
 maintenance ensuring a constant supply of clean water through:
@@ -34,7 +34,7 @@ This is the code that runs on the arduino LoRa32 board that sends data from the 
 This sensors inputs the readings to the arduino board which then sends the data to the other board to be transmitted to
 google firebase databese which will display on the webapp. The board also controls the the pump, the valves that are in the water supply system.
 
-## The LoRa32 reciver code:
+## The LoRa32 receiver code:
 This is the code that runs on the arduino LoRa32 board at the control room that receives data from the instrumentation room (at the water source eg: river). The recieved data is uploaded to firebase by this board which has wifi connection to upload the data received from the other board to the realtime database (on firebase). 
 
 [Find the arduino.ion code](https://github.com/minenhledlamini12/Rural-smart-water/tree/main/firebase-rural-smart-water) That recieves and upload the data to firebase.
