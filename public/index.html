@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta name="viewport" content="with=device-width, initial-scale=1.0">  
+<title>Rural-smart-water</title>
+<link rel="stylesheet" href="demoocss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub_header">
+    
+    <nav>
+        <a href="index.html"><img src="images/111111.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="about.html">Home</a></li>
+                   <li><a href="https://rural-water-project.web.app/">Ludzeludze</a></li>
+                <li><a href="">Mbikawakhe</a></li>
+                <li><a href="">Teteni</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <h1>Rural Smart Water</h1>
+    
+    </section>
+    <!---------about us content--------->
+    <section class="about-us">
+        <div class="row">
+        <div class="about-col">
+            <h1>Mission</h1>
+            <p>This rural smart water system aims to ensure clean water and sanitation for all people mainly targeting rural places. It mainly focuses on testing the quality and quantity of water in a reservoir whereby the source could be borehole or river. Various water parameters are tested including water turbidity, water level, water pH and dissolved water particles in an instrumentation room.</p>
+            <h1>Aprroach</h1>
+               <p> Upon collection of data, the data is transmitted wirelessly using ESP 32 Lora to online web application that store the data in Firebase. Firebase is used for authentication of verified technician and real time data storage. An authorized technician is guaranteed permission to remotely control the system instrumentation to ensure that water quality and appropriate water quantity is yielded for user. This is done by enabling remote control of water into reservoir by pump system, turning on filtering system and controlling output valve that gives out water to be utilized by end users.</p>
+            <a href="images/22222.jpg" class="hero-btn explore-btn">EXPLORE NOW</a>
+            </div>
+            
+            <div class="about-col">
+            <img src="images/33333.jpg">
+            </div>
+        </div>
+        
+</section>
+    
+        <section class="commity">
+        <h1>Meet Our Members</h1>
+        <p>We are proudly dedicated individuals who are members of the UNESWA ENGINEERING
+SOCIETY and work tirelessly to make a positive impact on the engineering community at the
+university of Eswatini.</p>
+        
+
+    
+     <!-------footer---------->
+    
+    <section class="footer">
+    <h4>About us</h4>
+        <p>Ensure clean water and sanitation for all people mainly targeting rural places.</p>
+        <!-------icons---------->
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61551477411980&mibextid=2JQ9oc"><i class="fa fa-facebook"></i></a>
+             <a href="https://api.whatsapp.com/send?phone=26876928350"><i class="fa fa-whatsapp"></i></a>
+             <a href="https://instagram.com/uneswa.engineering.society?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram"></i></a>
+             <a href="https://www.linkedin.com/company/uneswa-engineering-society/"><i class="fa fa-linkedin"></i></a>
+           <p>Made with <i class="fa fa-heart-o"></i> Us</p>
+        </div>
+    </section>
+    
+    
+    
+<!-------javascript for toggle menu---------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    </script>
+</body>
+
+</html>
